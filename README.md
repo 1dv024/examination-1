@@ -19,9 +19,9 @@ Applikationen ska innehålla en statisk metod, `GetDescriptiveResults`, som redu
 
 - Anropas applikation med en JSON-fil innehållande `[ 5, 1, 1, 1, 3, -2, 2, 5, 7, 4, 5, 16 ]` ska applikationen presentera sammanfattningen  `{ max: 16, mean: 4, median: 3.5, min: -2, mode: 1, 5, range: 18  }`.
 
-- Anropas applikation med JSON-filen data.json ska applikationen presnetera sammanfattningen  `{ max: 378, mean: 167.3088, median: 165, min: -42, mode: 31, 87, 228, range: 420  }`.
+- Anropas applikation med JSON-filen data.json ska applikationen presentera sammanfattningen  `{ max: 378, mean: 167.3088, median: 165, min: -42, mode: 31, 87, 228, range: 420  }`.
 
-- Anropas den statiska metoden `GetDescriptiveResults` med argumentet `null`, elelr ett argument som är en tom samling, ska ett undantag av typen `ApplicationException` kastas med meddelandet `"No data to analyze."`.
+- Anropas den statiska metoden `GetDescriptiveResults` med argumentet `null`, eller ett argument som är en tom samling, ska ett undantag av typen `ApplicationException` kastas innehållande meddelandet `"No data to analyze."`.
 
 - Argumentet får inte modifieras på något sätt av den statiska metoden `GetDescriptiveResults`, d.v.s. samlingen som skickas som argument till metoden ska vara opåverkad efter att metoden returnerat.  
 
